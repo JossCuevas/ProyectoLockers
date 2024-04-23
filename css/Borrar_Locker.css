@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.desenfoque{
+    filter: blur(10px);
+}
+
+h1 {
+    color: #0F9815;
+    text-align: center;
+    font-size: 35px;
+    margin: 5px;
+}
+
+h2 {
+    color: #0F9815;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+}
+
+h3{
+    color:black;
+    text-align:center ;
+    font-size: 15px;
+}
+
+a:link, a:visited {
+    background-color: white ;
+    color: black;
+    padding: 10px 15px;
+    text-align:center;
+    text-decoration: none;
+    
+}
+
+a:hover, a:active {
+    background-color: #0F9815;
+    border-radius: 20px;
+}
+
+
+
+/*estilos header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+}
+
+nav img {
+    width: 180px;
+    height: 100px; /* Alinea la imagen a la izquierda */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 5px;
+}
+
+ul li {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.active{
+    color: #7a9b05;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+
+}
+.btn-salir{
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 45px;
+}
+
+.btn-abrir{
+    width: 100px; 
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-borrar{
+    width: 100px; 
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: none; 
+}
+
+.menu-icon .bar {
+    margin-right: 5px;
+    background-color: rgb(0, 0, 0);
+    text-align: end;
+    transition: 0.4s;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* hasta aqui terminan los estilos del header */
+
+
+
+
+
+
+/*Estilos para los botones con imagenes de lockers*/
+
+    .contenedor-botones {
+        text-align: center; /* Centrar el contenido */
+        border: 2px solid #039450;
+        border-radius: 8px;
+        float: left;
+        width: 90%; /* Ancho del div */
+        margin: 0 auto; /*centrar horizontalmente */
+        margin-right: 50px;
+        margin-left: 50px;
+    } 
+    /* Estilos del botón de selección */
+    .boton-seleccion {
+        display: none; /* Ocultar el input por defecto */
+    }
+
+    .boton-seleccion + label {
+        display: inline-block;
+        padding: 5px 15px;
+        background-color: #129c40;
+        color: white;
+        cursor: pointer;
+        border-radius: 20px;
+        margin-bottom: 10px; /* Agrega espacio debajo de cada label */
+        padding-bottom: 10px; /* Agrega espacio debajo de cada label */
+        
+        
+    }
+
+    .boton-seleccion:checked + label {
+        background-color: #555; /* Cambiar el color cuando está seleccionado */
+    }
+
+    /* Estilos opcionales para personalizar la apariencia del botón seleccionado */
+    .boton-seleccion:checked + label::after {
+        content: '\2714'; /* Símbolo de checkmark */
+        margin-left: 5px;
+
+    }
+
+    /* Estilos para la imagen en el botón */
+    .boton-imagen {
+        vertical-align: middle; /* Alinear verticalmente la imagen */
+        margin-right: 5px; /* Espacio entre la imagen y el texto */
+        width: 50px; 
+        height: 50px;
+    }
+
+    /*Estilos para el botn Agragar*/
+    #boton-borrar {
+        padding: 6px 40px; 
+        text-align: center;
+        border: 2px solid #D99530;
+        background-color: #D99530;
+        border-radius: 20px; 
+        cursor: pointer; 
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px; /* Agrega espacio debajo del boton */
+     
+      }
+      
+      #boton-borrar:hover {
+        background-color: #066909; /* Cambia el color de fondo al pasar sobre el botón */
+        border: 2px solid  #066909;
+      }
+
+
+/* Estilos del pie de página */
+
+footer {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.line-green {
+    width: 100%;
+    height: 20px;
+    background-color: #0F9815;
+}
+
+.line-brown {
+    width: 100%;
+    height: 40px;
+    background-color: #D99530;
+}
+
+
+
+
+
+
+
+/* Media query para hacer el menú responsivo */
+@media screen and (max-width: 768px) {
+    body{
+        background: none;
+    }
+    ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el ícono de hamburguesa en pantallas pequeñas */
+        cursor: pointer;
+        margin-left: auto; /* Alinea el ícono de hamburguesa a la derecha */
+    }
+
+    .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-2px, 5px);
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-2px, -5px);
+    }
+
+    /* Muestra el menú en pantallas pequeñas cuando se hace clic en el ícono de hamburguesa */
+    ul.open {
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        width: 60%;
+        top: 100px;
+        right: 0;
+        height: 100vh;
+        align-items: center;
+        
+    }
+
+    ul.open li {
+        margin-right: 0;
+        margin-bottom: 10px;
+
+        width: 100%;
+    }
+    ul.open li:hover {
+        background-color: #069619;
+        color: #ffffff;
+    }
+    .contenedor-home{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .contenedor-home h1{
+        font-size: 25px;
+    }
+    
+    .img-home{
+        width: 300px;
+        height: auto;
+    }
+    .btn-salir{
+        background: none;
+        color: #000;
+        border: none;
+    }
+    
+}
