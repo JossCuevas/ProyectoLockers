@@ -35,7 +35,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reportes</title>
+    <title>Reportes NUEVA VERSION</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/Reportes_Style.css" rel='stylesheet' />
